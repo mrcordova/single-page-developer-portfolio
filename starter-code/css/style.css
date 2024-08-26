@@ -22,9 +22,23 @@ header {
   grid-column: 1 / -1;
   height: max-content;
   z-index: 1;
+  padding-block-start: 1.25rem;
 
   & h1 {
     font-size: 1.5rem;
+  }
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 1.25rem;
+
+  & div {
+    display: flex;
+    gap: 1.625rem;
   }
 }
 main {
@@ -32,4 +46,20 @@ main {
   grid-template-columns: subgrid;
   grid-row: 1;
   grid-column: 1 / -1;
+}
+
+.profile-picture-container {
+  display: grid;
+  grid-template-columns: subgrid;
+  justify-items: center;
+  background: url(../assets/images/pattern-circle.svg) no-repeat,
+    url(../assets/images/pattern-rings.svg) no-repeat;
+  & picture {
+    width: max-content;
+
+    /* margin: auto; */
+  }
+  & img {
+    width: 10.875rem;
+  }
 }
