@@ -115,7 +115,27 @@ main {
   /* flex-wrap: wrap; */
   gap: 2.5rem;
 }
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
 
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4375rem;
+  & h4 {
+    font-size: 1.5rem;
+    line-height: 1.33;
+  }
+
+  & div {
+    display: flex;
+    gap: 1.125rem;
+    color: var(--gray);
+  }
+}
 .projects-header {
   display: flex;
   justify-content: space-between;
