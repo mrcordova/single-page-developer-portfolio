@@ -52,8 +52,9 @@ main {
   display: grid;
   grid-template-columns: subgrid;
   justify-items: center;
-  background: url(../assets/images/pattern-circle.svg) no-repeat,
-    url(../assets/images/pattern-rings.svg) no-repeat;
+  background: url(../assets/images/pattern-circle.svg) no-repeat right -4.03125rem
+      top 15.875rem,
+    url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 7.75rem;
   & picture {
     width: max-content;
 
