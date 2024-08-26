@@ -5,6 +5,7 @@
 
   --green: hsl(153, 71%, 59%);
 }
+
 @font-face {
   font-family: "SpaceGrotesk-Bold";
   src: url(../assets/fonts/static/SpaceGrotesk-Bold.ttf) format("truetype");
@@ -13,7 +14,9 @@
   font-family: "SpaceGrotesk-Medium";
   src: url(../assets/fonts/static/SpaceGrotesk-Medium.ttf) format("truetype");
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: grid;
   background-color: var(--bg);
@@ -50,6 +53,8 @@ main {
   grid-template-columns: subgrid;
   grid-row: 1;
   grid-column: 1 / -1;
+
+  row-gap: 5rem;
 }
 
 .profile-picture-container {
@@ -100,5 +105,18 @@ main {
     font-size: 1rem;
     padding-block-end: 0.625rem;
     border-bottom: 2px solid var(--green);
+
+    & a {
+      text-decoration: none;
+
+      &:is(:link, :visited, :active) {
+        color: var(--white-text);
+      }
+
+      &:hover {
+        color: var(--green);
+        cursor: pointer;
+      }
+    }
   }
 }
