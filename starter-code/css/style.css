@@ -22,6 +22,14 @@ body {
   background-color: var(--bg);
   color: var(--white-text);
   font-family: "SpaceGrotesk-Bold";
+  padding-inline: 1rem 0.875rem;
+
+  background: url(../assets/images/pattern-circle.svg) no-repeat right -4.03125rem
+      top 15.875rem,
+    url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 7.75rem,
+    url(../assets/images/pattern-rings.svg) no-repeat 11.8125rem 80.4375rem,
+    var(--bg);
+  transition: 1s ease;
 }
 header {
   grid-row: 1;
@@ -35,7 +43,31 @@ header {
     line-height: 0.75;
   }
 }
+.experinence-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-rows: max-content;
 
+  /* flex-wrap: wrap; */
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+  padding-block: 2.5rem;
+  width: 100%;
+  text-align: center;
+
+  gap: 1.5rem;
+  & div {
+    & h3 {
+      font-size: 2rem;
+    }
+    & p {
+      font-size: 1rem;
+      color: var(--gray);
+      font-family: "SpaceGrotesk-Medium";
+      /* line-height: 1.625; */
+    }
+  }
+}
 .logos-container {
   display: flex;
   flex-direction: column;
@@ -54,6 +86,8 @@ main {
   grid-row: 1;
   grid-column: 1 / -1;
 
+  justify-items: center;
+
   row-gap: 5rem;
 }
 
@@ -61,10 +95,7 @@ main {
   display: grid;
   grid-template-columns: subgrid;
   justify-items: center;
-  background: url(../assets/images/pattern-circle.svg) no-repeat right -4.03125rem
-      top 15.875rem,
-    url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 7.75rem;
-  transition: 1s ease;
+
   & picture {
     width: max-content;
     padding-block-end: 2.5rem;
