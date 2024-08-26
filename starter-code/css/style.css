@@ -107,6 +107,49 @@ main {
   }
 }
 
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-rows: max-content;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  gap: 2.5rem;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  grid-row: 1;
+  grid-column: 1 / -1;
+  /* align-items: center; */
+  height: max-content;
+
+  & h3 {
+    font-size: 2.5rem;
+    letter-spacing: -0.07125rem;
+    line-height: 1;
+  }
+
+  & button {
+    font-size: 1rem;
+    letter-spacing: 0.14rem;
+    /* padding-block-end: 0.625rem; */
+    border-bottom: 2px solid var(--green);
+    & a {
+      text-decoration: none;
+
+      &:is(:link, :visited, :active) {
+        color: var(--white-text);
+      }
+
+      &:hover {
+        color: var(--green);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 .intro-container {
   display: flex;
   flex-direction: column;
