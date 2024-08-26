@@ -1,9 +1,27 @@
+:root {
+  --bg: hsl(0, 0%, 8%);
+  --white-text: hsl(0, 0%, 100%);
+}
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(../assets/fonts/static/SpaceGrotesk-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SpaceGrotesk-Medium";
+  src: url(../assets/fonts/static/SpaceGrotesk-Medium.ttf) format("truetype");
+}
+
 body {
   display: grid;
+  background-color: var(--bg);
+  color: var(--white-text);
+  font-family: "SpaceGrotesk-Bold";
 }
 header {
   grid-row: 1;
   grid-column: 1 / -1;
+  height: max-content;
+  z-index: 1;
 }
 main {
   display: grid;
