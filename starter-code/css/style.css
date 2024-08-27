@@ -34,8 +34,11 @@ body {
   transition: 1s ease;
 }
 footer {
-  background-color: var(--dark-gray);
-  padding-inline: 1rem 0.875rem;
+  background: url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 27.25rem,
+    var(--dark-gray);
+
+  padding-inline: 1rem;
+  padding-block-start: 3.75rem;
 }
 header {
   /* background-color: var(--bg); */
@@ -50,6 +53,68 @@ header {
     font-size: 1.5rem;
     line-height: 1.33;
     letter-spacing: -0.020625rem;
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  gap: 1.25rem;
+
+  & h3 {
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: -0.07125rem;
+  }
+
+  & p {
+    font-size: 1rem;
+    line-height: 1.625;
+    font-family: "SpaceGrotesk-Medium";
+  }
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "SpaceGrotesk-Medium";
+
+  & input,
+  textarea {
+    all: unset;
+    width: 100%;
+    text-indent: 1.5rem;
+    padding-block-end: 1.0625rem;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: -0.01375rem;
+  }
+
+  & label {
+    border-bottom: 1px solid var(--white-text);
+  }
+
+  & textarea {
+    height: 5.56rem;
+    display: block;
+  }
+  & button {
+    width: max-content;
+    align-self: flex-end;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: 0.143125rem;
+
+    padding-block-end: 0.625rem;
+    border-bottom: 2px solid var(--green);
+
+    &:hover {
+      cursor: pointer;
+      color: var(--green);
+    }
   }
 }
 .experinence-container {
@@ -79,6 +144,15 @@ header {
     }
   }
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+
+  padding-block-end: 5.4375rem;
+  border-bottom: 1px solid var(--white-text);
+}
 .logos-container {
   display: flex;
   flex-direction: column;
@@ -99,6 +173,7 @@ main {
   padding-inline: 1rem 0.875rem;
   justify-items: center;
 
+  padding-block-end: 5rem;
   row-gap: 5rem;
 }
 
