@@ -39,6 +39,14 @@ footer {
 
   padding-inline: 1rem;
   padding-block-start: 3.75rem;
+
+  & .logos-container {
+    padding-block: 2.4375rem 3.75rem;
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }
 }
 header {
   /* background-color: var(--bg); */
@@ -163,6 +171,12 @@ header {
   & div {
     display: flex;
     gap: 1.625rem;
+  }
+
+  & a:hover > svg > path {
+    cursor: pointer;
+    fill: var(--green);
+    color: var(--green);
   }
 }
 main {
