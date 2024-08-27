@@ -3,6 +3,7 @@
   --white-text: hsl(0, 0%, 100%);
   --gray: hsl(0, 0%, 85%);
 
+  --dark-gray: hsl(0, 0%, 14%);
   --green: hsl(153, 71%, 59%);
 }
 
@@ -22,21 +23,28 @@ body {
   background-color: var(--bg);
   color: var(--white-text);
   font-family: "SpaceGrotesk-Bold";
-  padding-inline: 1rem 0.875rem;
+  /* padding-inline: 1rem 0.875rem; */
 
   background: url(../assets/images/pattern-circle.svg) no-repeat right -4.03125rem
       top 15.875rem,
     url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 7.75rem,
     url(../assets/images/pattern-rings.svg) no-repeat 11.8125rem 80.4375rem,
     var(--bg);
+  z-index: 2;
   transition: 1s ease;
 }
+footer {
+  background-color: var(--dark-gray);
+  padding-inline: 1rem 0.875rem;
+}
 header {
+  /* background-color: var(--bg); */
   grid-row: 1;
   grid-column: 1 / -1;
   height: max-content;
   z-index: 1;
   padding-block-start: 1.25rem;
+  padding-inline: 1rem 0.875rem;
 
   & h1 {
     font-size: 1.5rem;
@@ -88,7 +96,7 @@ main {
   grid-template-columns: subgrid;
   grid-row: 1;
   grid-column: 1 / -1;
-
+  padding-inline: 1rem 0.875rem;
   justify-items: center;
 
   row-gap: 5rem;
