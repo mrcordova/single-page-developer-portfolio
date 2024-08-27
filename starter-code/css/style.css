@@ -106,7 +106,9 @@ header {
   }
 
   & textarea {
+    resize: none;
     height: 5.56rem;
+    /* overflow-wrap: break-word; */
     display: block;
   }
   & button {
@@ -164,9 +166,11 @@ header {
 .logos-container {
   display: flex;
   flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-self: center;
   align-items: center;
   gap: 1.25rem;
+  /* text-align: center; */
 
   & div {
     display: flex;
