@@ -40,7 +40,8 @@ header {
 
   & h1 {
     font-size: 1.5rem;
-    line-height: 0.75;
+    line-height: 1.33;
+    letter-spacing: -0.020625rem;
   }
 }
 .experinence-container {
@@ -59,12 +60,14 @@ header {
   & div {
     & h3 {
       font-size: 2rem;
+      line-height: 1.25;
+      letter-spacing: -0.0625rem;
     }
     & p {
       font-size: 1rem;
       color: var(--gray);
       font-family: "SpaceGrotesk-Medium";
-      /* line-height: 1.625; */
+      line-height: 1.625;
     }
   }
 }
@@ -170,9 +173,7 @@ main {
   justify-content: space-between;
   grid-row: 1;
   grid-column: 1 / -1;
-  /* align-items: center; */
-  height: max-content;
-
+  align-items: flex-start;
   & h3 {
     font-size: 2.5rem;
     letter-spacing: -0.07125rem;
@@ -182,7 +183,7 @@ main {
   & button {
     font-size: 1rem;
     letter-spacing: 0.14rem;
-    /* padding-block-end: 0.625rem; */
+    padding-block-end: 0.625rem;
     border-bottom: 2px solid var(--green);
     & a {
       text-decoration: none;
@@ -227,6 +228,7 @@ main {
   & button {
     font-size: 1rem;
     padding-block-end: 0.625rem;
+    line-height: 1.625;
     border-bottom: 2px solid var(--green);
 
     & a {
