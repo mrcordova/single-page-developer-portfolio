@@ -286,20 +286,21 @@
         </div>
         <form id="contact-form" novalidate>
           <label for="name">
-            <span></span>
-            <span></span>
             <input type="text" name="name" id="name" placeholder="NAME" />
+            <span class="error-text hide">Sorry, invalid format here</span>
           </label>
           <label for="email">
             <input type="email" name="email" id="email" placeholder="EMAIL" />
+            <span class="error-text hide">Sorry, invalid format here</span>
           </label>
           <label for="message">
             <textarea
               name="message"
               id="message"
               placeholder="MESSAGE"></textarea>
+            <span class="error-text hide">Sorry, invalid format here</span>
           </label>
-          <button>SEND MESSAGE</button>
+          <button id="send-msg-btn">SEND MESSAGE</button>
         </form>
       </div>
 
