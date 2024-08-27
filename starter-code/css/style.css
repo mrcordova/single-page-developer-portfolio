@@ -218,21 +218,18 @@ main {
   line-height: 1.625;
   letter-spacing: 0.143124rem;
 
-  & button {
+  & a {
     padding-block-end: 0.625rem;
     border-bottom: 2px solid var(--green);
+    text-decoration: none;
 
-    & a {
-      text-decoration: none;
+    &:is(:link, :visited, :active) {
+      color: var(--white-text);
+    }
 
-      &:is(:link, :visited, :active) {
-        color: var(--white-text);
-      }
-
-      &:hover {
-        color: var(--green);
-        cursor: pointer;
-      }
+    &:hover {
+      color: var(--green);
+      cursor: pointer;
     }
   }
 }
@@ -281,22 +278,20 @@ main {
     line-height: 1;
   }
 
-  & button {
+  & a {
     font-size: 1rem;
     letter-spacing: 0.14rem;
     padding-block-end: 0.625rem;
     border-bottom: 2px solid var(--green);
-    & a {
-      text-decoration: none;
+    text-decoration: none;
 
-      &:is(:link, :visited, :active) {
-        color: var(--white-text);
-      }
+    &:is(:link, :visited, :active) {
+      color: var(--white-text);
+    }
 
-      &:hover {
-        color: var(--green);
-        cursor: pointer;
-      }
+    &:hover {
+      color: var(--green);
+      cursor: pointer;
     }
   }
 }
@@ -326,23 +321,20 @@ main {
     line-height: 1.625;
   }
 
-  & button {
+  & a {
     font-size: 1rem;
     padding-block-end: 0.625rem;
     line-height: 1.625;
     border-bottom: 2px solid var(--green);
+    text-decoration: none;
 
-    & a {
-      text-decoration: none;
+    &:is(:link, :visited, :active) {
+      color: var(--white-text);
+    }
 
-      &:is(:link, :visited, :active) {
-        color: var(--white-text);
-      }
-
-      &:hover {
-        color: var(--green);
-        cursor: pointer;
-      }
+    &:hover {
+      color: var(--green);
+      cursor: pointer;
     }
   }
 }
