@@ -34,20 +34,26 @@ for (const input of inputs) {
 
 msgBtn.addEventListener("click", (e) => {
   e.preventDefault();
+
+  for (const input of inputs) {
+    input.nextElementSibling.classList.toggle("hide", input.checkValidity());
+  }
   templateParams.from_name = inputs[0].value;
   templateParams.reply_to = inputs[1].value;
   templateParams.message = inputs[2].value;
 
-  msgBtn.textContent = "Sending...";
-  emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams).then(
-    (response) => {
-      //   console.log("SUCCESS!", response.status, response.text);
-      msgBtn.textContent = "SEND MESSAGE";
-      alert("Sent!");
-    },
-    (error) => {
-      // console.log("FAILED...", error);
-      alert("Failed");
-    }
-  );
+  if (e.currentTarget.parentElement.checkValidity()) {
+    msgBtn.textContent = "Sending...";
+    emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams).then(
+      (response) => {
+        //   console.log("SUCCESS!", response.status, response.text);
+        msgBtn.textContent = "SEND MESSAGE";
+        alert("Sent!");
+      },
+      (error) => {
+        // console.log("FAILED...", error);
+        alert("Failed");
+      }
+    );
+  }
 });
