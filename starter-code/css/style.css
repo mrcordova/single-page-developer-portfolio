@@ -103,6 +103,10 @@ header {
 
   & label {
     border-bottom: 1px solid var(--white-text);
+
+    &:has(input:active, textarea:active) {
+      border-bottom: 1px solid var(--green);
+    }
   }
 
   & textarea {
