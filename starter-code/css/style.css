@@ -88,25 +88,31 @@ header {
   grid-column: 1 / -1;
   height: max-content;
   z-index: 1;
+  padding-block-start: 1.25rem;
+  padding-inline: clamp(1rem, 0.0458rem + 4.0712vw, 2rem)
+    clamp(0.875rem, -0.0231rem + 3.8321vw, 1.8163rem);
   /* Mobile */
   /* padding-block-start: 1.25rem; */
   /* padding-inline: 1rem 0.875rem; */
   /* Table */
-  padding-block-start: 1.25rem;
-  padding-inline: 2rem 1.81625rem;
+  /* padding-block-start: 1.25rem; */
+  /* padding-inline: 2rem 1.81625rem; */
 
   /* Desktop */
 
-  padding-inline: 10.3125rem 12.15rem;
+  /* padding-inline: 10.3125rem 12.15rem; */
   & h1 {
-    /* Mobile */
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
     line-height: 1.33;
-    letter-spacing: -0.020625rem;
+    letter-spacing: clamp(-0.0275rem, -0.0141rem + -0.028vw, -0.0206rem);
+    /* Mobile */
+    /* font-size: 1.5rem; */
+    /* line-height: 1.33; */
+    /* letter-spacing: -0.020625rem; */
     /* TAblet */
-    font-size: 2rem;
-    line-height: 1;
-    letter-spacing: -0.0275rem;
+    /* font-size: 2rem; */
+    /* line-height: 1; */
+    /* letter-spacing: -0.0275rem; */
   }
 }
 
@@ -598,6 +604,22 @@ dialog {
       /* padding-block: 1.875rem 2.5rem; */
       /* Desktop */
       /* padding-block: 2.9375rem 5.75rem; */
+    }
+  }
+
+  header {
+    padding-inline: clamp(2rem, -7.5rem + 19.7917vw, 10.3125rem)
+      clamp(1.8163rem, -9.9937rem + 24.6042vw, 12.15rem);
+    /* Table */
+
+    /* padding-inline: 2rem 1.81625rem; */
+
+    /* Desktop */
+
+    /* padding-inline: 10.3125rem 12.15rem; */
+
+    & h1 {
+      line-height: 1;
     }
   }
   .experinence-container {
