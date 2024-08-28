@@ -285,6 +285,8 @@ main {
     /* padding-block-end: 2.5rem; */
     /* Tablet */
     padding-block-end: 3.75rem;
+    /* Desktop */
+    padding-block-end: 6.5rem;
   }
   & img {
     /* Mobile */
@@ -417,10 +419,10 @@ main {
   /* Mobile */
   /* gap: 1.5rem; */
   /* Tablet */
-  gap: 4.5rem;
-  padding-block-start: 5.625rem;
+  /* gap: 4.5rem; */
+  /* padding-block-start: 5.625rem; */
   /* DESktop */
-  gap: 4.5rem;
+  gap: 2.6875rem;
   padding-block-start: 0rem;
   & h2 {
     /* Mobile */
@@ -463,7 +465,9 @@ main {
 
     /* Tablet */
     /* SAme as mobile */
-    margin-block-start: -2.125rem;
+    /* margin-block-start: -2.125rem; */
+    /* Desktop */
+    margin-block-start: 1.4375rem;
 
     &:is(:link, :visited, :active) {
       color: var(--white-text);
@@ -512,6 +516,10 @@ main {
   .profile-picture-container {
     & .intro-container {
       grid-column: 1 / 7;
+
+      & p {
+        width: 39ch;
+      }
     }
   }
 }
