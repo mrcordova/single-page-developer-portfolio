@@ -119,28 +119,33 @@ header {
 .contact-container {
   display: flex;
   flex-direction: column;
-
   text-align: center;
+  gap: 1.25rem;
+
   /* Mobile */
-  gap: 1.25rem;
+  /* gap: 1.25rem; */
   /* Tablet */
-  gap: 1.25rem;
+  /* gap: 1.25rem; */
   /* Desktop */
-  gap: 2.25rem;
+  /* gap: 2.25rem; */
 
   & h3 {
+    font-size: clamp(2.5rem, 0.5916rem + 8.1425vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: clamp(-0.1281rem, -0.017rem + -0.2316vw, -0.0712rem);
+
     /* Mobile */
-    font-size: 2.5rem;
-    line-height: 1;
-    letter-spacing: -0.07125rem;
+    /* font-size: 2.5rem; */
+    /* line-height: 1; */
+    /* letter-spacing: -0.07125rem; */
     /* Tablet */
-    font-size: 4.5rem;
-    line-height: 1;
-    letter-spacing: -0.128125rem;
+    /* font-size: 4.5rem; */
+    /* line-height: 1; */
+    /* letter-spacing: -0.128125rem; */
     /* Desktop */
-    font-size: 5.5rem;
-    line-height: 1;
-    letter-spacing: -0.15625rem;
+    /* font-size: 5.5rem; */
+    /* line-height: 1; */
+    /* letter-spacing: -0.15625rem; */
   }
 
   & p {
@@ -620,6 +625,28 @@ dialog {
 
     & h1 {
       line-height: 1;
+    }
+  }
+
+  .contact-container {
+    gap: clamp(1.25rem, 0.1071rem + 2.381vw, 2.25rem);
+    /* Tablet */
+    /* gap: 1.25rem; */
+    /* Desktop */
+    /* gap: 2.25rem; */
+
+    & h3 {
+      font-size: clamp(4.5rem, 3.3571rem + 2.381vw, 5.5rem);
+      letter-spacing: clamp(-0.1562rem, -0.096rem + -0.067vw, -0.1281rem);
+
+      /* Tablet */
+      /* font-size: 4.5rem; */
+      /* line-height: 1; */
+      /* letter-spacing: -0.128125rem; */
+      /* Desktop */
+      /* font-size: 5.5rem; */
+      /* line-height: 1; */
+      /* letter-spacing: -0.15625rem; */
     }
   }
   .experinence-container {
