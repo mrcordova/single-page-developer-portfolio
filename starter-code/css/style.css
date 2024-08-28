@@ -17,9 +17,11 @@
 }
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 body {
   display: grid;
+  min-height: 100%;
   background-color: var(--bg);
   color: var(--white-text);
   font-family: "SpaceGrotesk-Bold";
@@ -32,8 +34,7 @@ body {
     var(--bg);
   /* Tablet */
   background: url(../assets/images/pattern-rings.svg) no-repeat -16.5625rem 5.375em,
-    url(../assets/images/pattern-rings.svg) no-repeat 35.625rem 65.4375rem,
-    var(--bg);
+    url(../assets/images/pattern-rings.svg) no-repeat 34rem 61.5rem, var(--bg);
 }
 footer {
   background: url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 27.25rem,
@@ -153,13 +154,16 @@ header {
     }
   }
 }
+.experience-div {
+  width: 100%;
+}
 .experinence-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  grid-template-rows: max-content;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  grid-template-rows: min-content;
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 
   /* Mobile */
@@ -167,11 +171,12 @@ header {
   /* padding-block: 2.5rem; */
   /* gap: 1.5rem; */
   /* TAblet */
-  padding-inline: 1.875rem 1.875rem;
   padding-block: 3.25rem;
-  gap: 3.25rem;
+  margin-inline: 1.875rem 1.875rem;
+  gap: 3.25rem 0.4375rem;
 
   & div {
+    /* width: max-content; */
     & h3 {
       /* Mobile */
       font-size: 2rem;
@@ -237,10 +242,10 @@ main {
 .profile-picture-container {
   display: grid;
   justify-items: center;
-
+  overflow: hidden;
   position: relative;
   /* Mobile */
-  padding-inline: 1rem 0.875rem;
+  /* padding-inline: 1rem 0.875rem; */
 
   /* Tablet */
   padding-inline: 2rem 0rem;
@@ -296,13 +301,20 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   grid-template-rows: max-content;
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
-  gap: 2.5rem;
+
+  /* Mobile */
+  /* gap: 2.5rem; */
+  /* Tablet */
+  padding-block-start: 3rem;
+  gap: 3.75rem 1.5rem;
 }
 .project-card {
   display: flex;
   flex-direction: column;
+
+  /* Mobile */
+  /* gap: 1.25rem; */
+  /* Tablet */
   gap: 1.25rem;
 }
 
@@ -332,8 +344,13 @@ main {
   grid-column: 1 / -1;
   align-items: flex-start;
   & h3 {
+    /* Mobile */
     font-size: 2.5rem;
     letter-spacing: -0.07125rem;
+    line-height: 1;
+    /* TAblet */
+    font-size: 4.5rem;
+    letter-spacing: -0.128125rem;
     line-height: 1;
   }
 
@@ -343,6 +360,7 @@ main {
     padding-block-end: 0.625rem;
     border-bottom: 2px solid var(--green);
     text-decoration: none;
+    line-height: 1.625;
 
     &:is(:link, :visited, :active) {
       color: var(--white-text);
@@ -427,6 +445,9 @@ main {
     justify-content: space-between;
   }
 
+  .projects-header {
+    align-items: normal;
+  }
   .profile-picture-container {
     grid-template-columns: repeat(8, 1fr);
     justify-items: end;
