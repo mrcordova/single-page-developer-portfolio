@@ -71,6 +71,9 @@ header {
   padding-block-start: 1.25rem;
   padding-inline: 2rem 1.81625rem;
 
+  /* Desktop */
+
+  padding-inline: 10.3125rem 12.15rem;
   & h1 {
     /* Mobile */
     font-size: 1.5rem;
@@ -271,6 +274,8 @@ main {
 
   /* Tablet */
   padding-inline: 2rem 0rem;
+  /* Desktop */
+  padding-inline: 10.3125rem;
   & picture {
     width: max-content;
     /* Mobile */
@@ -282,7 +287,9 @@ main {
     /* Mobile */
     /* width: 10.875rem; */
     /* Tablet */
-    width: 20.125rem;
+    /* width: 20.125rem; */
+    /* Desktop */
+    width: 27.8125rem;
   }
 
   .circle {
