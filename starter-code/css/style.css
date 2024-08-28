@@ -28,33 +28,44 @@ body {
   /* padding-inline: 1rem 0.875rem; */
   z-index: 2;
   transition: 1s ease;
-  /* Mobile */
-  background: url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 7.75rem,
-    url(../assets/images/pattern-rings.svg) no-repeat 11.8125rem 80.4375rem,
+  background: url(../assets/images/pattern-rings.svg) no-repeat
+      clamp(-21.375rem, -25.9671rem + 19.5929vw, -16.5625rem)
+      clamp(5.375rem, 10.0162rem + -9.6692vw, 7.75rem),
+    url(../assets/images/pattern-rings.svg) no-repeat
+      clamp(11.8125rem, -9.3588rem + 90.3308vw, 34rem)
+      clamp(61.5rem, 98.5076rem + -77.0992vw, 80.4375rem),
     var(--bg);
+  /* Mobile */
+  /* background: url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 7.75rem,
+    url(../assets/images/pattern-rings.svg) no-repeat 11.8125rem 80.4375rem,
+    var(--bg); */
   /* Tablet */
-  background: url(../assets/images/pattern-rings.svg) no-repeat -16.5625rem 5.375em,
-    url(../assets/images/pattern-rings.svg) no-repeat 34rem 61.5rem, var(--bg);
+  /* background: url(../assets/images/pattern-rings.svg) no-repeat -16.5625rem 5.375em,
+    url(../assets/images/pattern-rings.svg) no-repeat 34rem 61.5rem, var(--bg); */
   /* Desktop */
-  background: url(../assets/images/pattern-rings.svg) no-repeat -6.25rem 8.3125em,
-    url(../assets/images/pattern-rings.svg) no-repeat 78rem 64rem, var(--bg);
+  /* background: url(../assets/images/pattern-rings.svg) no-repeat -6.25rem 8.3125em,
+    url(../assets/images/pattern-rings.svg) no-repeat 78rem 64rem, var(--bg); */
 }
 footer {
+  background: url(../assets/images/pattern-rings.svg) no-repeat
+      clamp(-23rem, -19.8244rem + -6.6158vw, -21.375rem)
+      clamp(27.25rem, 20.6302rem + 28.2443vw, 34.1875rem),
+    var(--dark-gray);
   /* Mobile */
-  background: url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 27.25rem,
-    var(--dark-gray);
+  /* background: url(../assets/images/pattern-rings.svg) no-repeat -21.375rem 27.25rem,
+    var(--dark-gray); */
   /* Tablet */
-  background: url(../assets/images/pattern-rings.svg) no-repeat -23rem 34.1875rem,
-    var(--dark-gray);
+  /* background: url(../assets/images/pattern-rings.svg) no-repeat -23rem 34.1875rem,
+    var(--dark-gray); */
   /* Desktop */
-  background: url(../assets/images/pattern-rings.svg) no-repeat -12.875rem 20.4375rem,
-    var(--dark-gray);
+  /* background: url(../assets/images/pattern-rings.svg) no-repeat -12.875rem 20.4375rem,
+    var(--dark-gray); */
 
   padding-inline: 1rem;
   padding-block-start: 3.75rem;
   /* Desktop */
-  padding-inline: 10.3125rem;
-  padding-block-start: 5.25rem;
+  /* padding-inline: 10.3125rem; */
+  /* padding-block-start: 5.25rem; */
 
   & .logos-container {
     /* Mobile */
@@ -543,6 +554,42 @@ dialog {
   display: none;
 }
 @media (min-width: 48rem) {
+  body {
+    background: url(../assets/images/pattern-rings.svg) no-repeat
+        clamp(-16.5625rem, -28.3482rem + 24.5536vw, -6.25rem)
+        clamp(5.375rem, 2.0179rem + 6.994vw, 8.3125rem),
+      url(../assets/images/pattern-rings.svg) no-repeat
+        clamp(34rem, -16.2857rem + 104.7619vw, 78rem)
+        clamp(61.5rem, 58.6429rem + 5.9524vw, 64rem),
+      var(--bg);
+    /* Tablet */
+    /* background: url(../assets/images/pattern-rings.svg) no-repeat -16.5625rem 5.375rem,
+      url(../assets/images/pattern-rings.svg) no-repeat 34rem 61.5rem, var(--bg); */
+    /* Desktop */
+    /* background: url(../assets/images/pattern-rings.svg) no-repeat -6.25rem 8.3125rem,
+      url(../assets/images/pattern-rings.svg) no-repeat 78rem 64rem, var(--bg); */
+  }
+
+  footer {
+    background: url(../assets/images/pattern-rings.svg) no-repeat
+        clamp(-23rem, -34.5714rem + 24.1071vw, -12.875rem)
+        clamp(20.4375rem, 49.9018rem + -32.7381vw, 34.1875rem),
+      var(--dark-gray);
+    /* Tablet */
+    /* background: url(../assets/images/pattern-rings.svg) no-repeat -23rem 34.1875rem,
+      var(--dark-gray); */
+    /* Desktop */
+    /* background: url(../assets/images/pattern-rings.svg) no-repeat -12.875rem 20.4375rem,
+      var(--dark-gray); */
+
+    padding-inline: clamp(1rem, -9.6429rem + 22.1726vw, 10.3125rem);
+    padding-block-start: clamp(3.75rem, 2.0357rem + 3.5714vw, 5.25rem);
+    /* padding-inline: 1rem; */
+    /* padding-block-start: 3.75rem; */
+    /* Desktop */
+    /* padding-inline: 10.3125rem; */
+    /* padding-block-start: 5.25rem; */
+  }
   .experinence-container {
     text-align: start;
     border-bottom: 0 solid var(--gray);
