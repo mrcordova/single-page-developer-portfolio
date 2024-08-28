@@ -68,12 +68,14 @@ footer {
   /* padding-block-start: 5.25rem; */
 
   & .logos-container {
+    padding-block: clamp(1.875rem, 2.9742rem + -2.2901vw, 2.4375rem)
+      clamp(2.5rem, 4.9427rem + -5.0891vw, 3.75rem);
     /* Mobile */
     /* padding-block: 2.4375rem 3.75rem; */
     /* Tablet */
     /* padding-block: 1.875rem 2.5rem; */
     /* Desktop */
-    padding-block: 2.9375rem 5.75rem;
+    /* padding-block: 2.9375rem 5.75rem; */
 
     & p {
       font-size: 1.5rem;
@@ -589,6 +591,14 @@ dialog {
     /* Desktop */
     /* padding-inline: 10.3125rem; */
     /* padding-block-start: 5.25rem; */
+    & .logos-container {
+      padding-block: clamp(1.875rem, 0.6607rem + 2.5298vw, 2.9375rem)
+        clamp(2.5rem, -1.2143rem + 7.7381vw, 5.75rem);
+      /* Tablet */
+      /* padding-block: 1.875rem 2.5rem; */
+      /* Desktop */
+      /* padding-block: 2.9375rem 5.75rem; */
+    }
   }
   .experinence-container {
     text-align: start;
