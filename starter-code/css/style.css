@@ -512,7 +512,9 @@ main {
     }
   }
 }
-
+dialog {
+  display: none;
+}
 @media (min-width: 48rem) {
   .experinence-container {
     text-align: start;
@@ -565,6 +567,7 @@ main {
   }
 
   dialog {
+    display: block;
     right: 0;
     left: 0;
     top: 0;
