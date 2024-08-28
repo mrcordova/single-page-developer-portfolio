@@ -37,7 +37,7 @@ body {
     url(../assets/images/pattern-rings.svg) no-repeat 34rem 61.5rem, var(--bg);
   /* Desktop */
   background: url(../assets/images/pattern-rings.svg) no-repeat -6.25rem 8.3125em,
-    url(../assets/images/pattern-rings.svg) no-repeat 34rem 61.5rem, var(--bg);
+    url(../assets/images/pattern-rings.svg) no-repeat 78rem 64rem, var(--bg);
 }
 footer {
   /* Mobile */
@@ -197,9 +197,13 @@ header {
   /* padding-block: 2.5rem; */
   /* gap: 1.5rem; */
   /* TAblet */
+  /* padding-block: 3.25rem; */
+  /* margin-inline: 1.875rem 1.875rem; */
+  /* gap: 3.25rem 0.4375rem; */
+  /* desktop */
   padding-block: 3.25rem;
-  margin-inline: 1.875rem 1.875rem;
-  gap: 3.25rem 0.4375rem;
+  margin-inline: 10.3125rem;
+  gap: 3.625rem 1.875rem;
 
   & div {
     /* width: max-content; */
@@ -212,12 +216,20 @@ header {
       font-size: 3rem;
       line-height: 1.16;
       letter-spacing: -0.09375rem;
+      /* Desktop */
+      font-size: 3rem;
+      line-height: 1.16;
+      letter-spacing: -0.09375rem;
     }
     & p {
-      font-size: 1rem;
       color: var(--gray);
       font-family: "SpaceGrotesk-Medium";
-      line-height: 1.625;
+      /* mobile and tablet */
+      /* font-size: 1rem; */
+      /* line-height: 1.625; */
+      /* Desktop */
+      font-size: 1.125rem;
+      line-height: 1.55;
     }
   }
 }
@@ -335,17 +347,30 @@ main {
   }
 }
 .projects-container {
-  display: grid;
+  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  grid-template-rows: max-content;
+  /* grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr)); */
+
+  /* width: 100%; */
+  /* grid-template-rows: max-content; */
 
   /* Mobile */
   /* gap: 2.5rem; */
   /* Tablet */
-  padding-block-start: 3rem;
-  gap: 3.75rem 1.5rem;
+  /* padding-block-start: 3rem; */
+  /* gap: 3.75rem 1.5rem; */
+  /* Desktop */
+  padding-block-start: 8.75rem;
+  gap: 5rem 1.875rem;
+  /* padding-inline: 10.3125rem; */
 }
 .project-card {
+  width: 33.75rem;
+  /* width: 21.4375rem */
   display: flex;
   flex-direction: column;
 
@@ -380,6 +405,9 @@ main {
   grid-row: 1;
   grid-column: 1 / -1;
   align-items: flex-start;
+  /* Desktop */
+  padding-inline: 10.3125rem;
+  width: 100%;
   & h3 {
     /* Mobile */
     font-size: 2.5rem;
@@ -388,6 +416,10 @@ main {
     /* TAblet */
     font-size: 4.5rem;
     letter-spacing: -0.128125rem;
+    line-height: 1;
+    /* Desktop */
+    font-size: 5.5rem;
+    letter-spacing: -0.15625rem;
     line-height: 1;
   }
 
@@ -521,5 +553,9 @@ main {
         width: 39ch;
       }
     }
+  }
+
+  .form-container {
+    flex-direction: row;
   }
 }
