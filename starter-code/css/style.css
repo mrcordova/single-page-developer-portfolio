@@ -35,6 +35,9 @@ body {
   /* Tablet */
   background: url(../assets/images/pattern-rings.svg) no-repeat -16.5625rem 5.375em,
     url(../assets/images/pattern-rings.svg) no-repeat 34rem 61.5rem, var(--bg);
+  /* Desktop */
+  background: url(../assets/images/pattern-rings.svg) no-repeat -6.25rem 8.3125em,
+    url(../assets/images/pattern-rings.svg) no-repeat 34rem 61.5rem, var(--bg);
 }
 footer {
   /* Mobile */
@@ -416,6 +419,9 @@ main {
   /* Tablet */
   gap: 4.5rem;
   padding-block-start: 5.625rem;
+  /* DESktop */
+  gap: 4.5rem;
+  padding-block-start: 0rem;
   & h2 {
     /* Mobile */
     font-size: 2.5rem;
@@ -424,6 +430,10 @@ main {
     /* Tablet */
     font-size: 4.5rem;
     letter-spacing: -0.128125rem;
+    line-height: 1;
+    /* Desktop */
+    font-size: 5.5rem;
+    letter-spacing: -0.15625rem;
     line-height: 1;
 
     & span {
@@ -494,6 +504,14 @@ main {
       text-align: start;
       grid-row: 1;
       grid-column: 1 / 6;
+    }
+  }
+}
+
+@media (min-width: 90rem) {
+  .profile-picture-container {
+    & .intro-container {
+      grid-column: 1 / 7;
     }
   }
 }
