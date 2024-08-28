@@ -294,13 +294,16 @@ main {
 
   .circle {
     position: absolute;
+    width: 8.0625rem;
     /* Mobile */
     right: -4.0625rem;
     top: 15.875rem;
     /* Tablet */
     right: -3.965rem;
     top: 29.4375rem;
-    width: 8.0625rem;
+    /* DEsktop */
+    right: 34.0625rem;
+    top: 32.5625rem;
   }
 }
 
