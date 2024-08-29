@@ -318,13 +318,15 @@ main {
   grid-column: 1 / -1;
   /* padding-inline: 1rem 0.875rem; */
   justify-items: center;
+  padding-block-end: 5rem;
+  row-gap: clamp(0rem, 9.771rem + -20.3562vw, 5rem);
 
   /* Mobile */
   /* padding-block-end: 5rem; */
   /* row-gap: 5rem; */
   /* Tablet */
-  padding-block-end: 5rem;
-  row-gap: 0rem;
+  /* padding-block-end: 5rem; */
+  /* row-gap: 0rem; */
 }
 
 .profile-picture-container {
