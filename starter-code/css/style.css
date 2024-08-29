@@ -286,7 +286,8 @@ header {
 
   gap: clamp(3rem, 3.2443rem + -0.5089vw, 3.125rem);
   padding-block-end: 5.4375rem;
-  padding-inline: 9.0625rem;
+  /* padding-inline: clamp(0rem, -8.6474rem + 36.8957vw, 9.0625rem); */
+
   /* Mobile */
   /* gap: 3.125rem; */
   /* padding-block-end: 5.4375rem; */
@@ -449,6 +450,7 @@ main {
   padding-inline: clamp(1rem, 0.0458rem + 4.0712vw, 2rem);
   /* Desktop */
   /* padding-inline: 10.3125rem; */
+  /* width: minmax(79.375rem, 100%); */
   width: 100%;
   & h3 {
     font-size: clamp(2.5rem, 0.5916rem + 8.1425vw, 4.5rem);
@@ -492,6 +494,7 @@ main {
   /* gap: 1.5rem; */
 
   & h2 {
+    /* width: 14ch; */
     font-size: clamp(2.5rem, 0.5916rem + 8.1425vw, 4.5rem);
     letter-spacing: clamp(-0.1281rem, -0.017rem + -0.2316vw, -0.0712rem);
     line-height: 1;
@@ -507,6 +510,7 @@ main {
   }
 
   & p {
+    /* width: 14ch; */
     color: var(--gray);
     font-family: "SpaceGrotesk-Medium";
 
@@ -666,7 +670,7 @@ dialog {
   .form-container {
     gap: clamp(3rem, -9.2857rem + 25.5952vw, 13.75rem);
     padding-block-end: clamp(5.4375rem, 5.0804rem + 0.744vw, 5.75rem);
-    padding-inline: clamp(0rem, 19.4196rem + -21.5774vw, 9.0625rem);
+    /* padding-inline: clamp(0rem, 19.4196rem + -21.5774vw, 9.0625rem); */
     /* TAblet */
     /* gap: 3rem; */
     /* padding-block-end: 5.4375rem; */
@@ -828,6 +832,7 @@ dialog {
   .form-container {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
   }
 
   .project-btns {
