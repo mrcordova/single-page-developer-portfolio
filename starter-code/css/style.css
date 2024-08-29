@@ -229,52 +229,51 @@ header {
   width: 100%;
 }
 .experinence-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-  grid-template-rows: min-content;
+  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr)); */
+  /* grid-template-rows: min-content; */
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
   /* width: 100%; */
   text-align: center;
 
+  padding-block: clamp(2.5rem, 1.7844rem + 3.0534vw, 3.25rem);
+  margin-inline: clamp(1rem, 0.1651rem + 3.5623vw, 1.875rem)
+    clamp(0.875rem, -0.0792rem + 4.0712vw, 1.875rem);
+  gap: clamp(1.5rem, -0.1698rem + 7.1247vw, 3.25rem)
+    clamp(0.4375rem, 2.5138rem + -4.3257vw, 1.5rem);
+
   /* Mobile */
-  padding-inline: 1rem 0.875rem;
-  padding-block: 2.5rem;
-  gap: 1.5rem;
-  /* TAblet */
-  padding-block: 3.25rem;
-  margin-inline: 1.875rem 1.875rem;
-  gap: 3.25rem 0.4375rem;
-  /* desktop */
-  padding-block: 3.25rem;
-  margin-inline: 10.3125rem;
-  gap: 3.625rem 1.875rem;
+  /* padding-block: 2.5rem; */
+  /* margin-inline: 1rem 0.875rem; */
+  /* gap: 1.5rem; */
 
   & div {
+    width: 21.5625rem;
     /* width: max-content; */
     & h3 {
-      /* Mobile */
-      font-size: 2rem;
+      font-size: clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
       line-height: 1.25;
-      letter-spacing: -0.0625rem;
-      /* Tablet */
-      font-size: 3rem;
-      line-height: 1.16;
-      letter-spacing: -0.09375rem;
-      /* Desktop */
-      font-size: 3rem;
-      line-height: 1.16;
-      letter-spacing: -0.09375rem;
+      letter-spacing: clamp(-0.0937rem, -0.0327rem + -0.1272vw, -0.0625rem);
+      /* Mobile */
+      /* font-size: 2rem; */
+      /* line-height: 1.25; */
+      /* letter-spacing: -0.0625rem; */
     }
     & p {
       color: var(--gray);
       font-family: "SpaceGrotesk-Medium";
+
+      font-size: clamp(1rem, 0.8807rem + 0.5089vw, 1.125rem);
       /* mobile and tablet */
       /* font-size: 1rem; */
-      /* line-height: 1.625; */
+      line-height: 1.625;
       /* Desktop */
-      font-size: 1.125rem;
-      line-height: 1.55;
+      /* font-size: 1.125rem; */
+      /* line-height: 1.55; */
     }
   }
 }
@@ -660,6 +659,32 @@ dialog {
   .experinence-container {
     text-align: start;
     border-bottom: 0 solid var(--gray);
+
+    margin-inline: clamp(1.875rem, -7.7679rem + 20.0893vw, 10.3125rem);
+    gap: clamp(3.25rem, 2.8214rem + 0.8929vw, 3.625rem)
+      clamp(0.4375rem, -1.2054rem + 3.4226vw, 1.875rem);
+    /* TAblet */
+    /* padding-block: 3.25rem; */
+    /* margin-inline: 1.875rem; */
+    /* gap: 3.25rem 0.4375rem; */
+    /* desktop */
+    /* padding-block: 3.25rem; */
+    /* margin-inline: 10.3125rem; */
+    /* gap: 3.625rem 1.875rem; */
+
+    & div {
+      & h3 {
+        line-height: 1.16;
+        /* Tablet */
+        /* font-size: 3rem; */
+        /* line-height: 1.16; */
+        /* letter-spacing: -0.09375rem; */
+        /* Desktop */
+        /* font-size: 3rem; */
+        /* line-height: 1.16; */
+        /* letter-spacing: -0.09375rem; */
+      }
+    }
   }
   .logos-container {
     flex-direction: row;
@@ -692,6 +717,14 @@ dialog {
   .contact-container {
     text-align: left;
     width: 45ch;
+  }
+
+  .experinence-container {
+    & div {
+      & p {
+        line-height: 1.55;
+      }
+    }
   }
   .profile-picture-container {
     & .intro-container {
