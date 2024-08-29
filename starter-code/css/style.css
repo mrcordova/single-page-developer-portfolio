@@ -334,44 +334,34 @@ main {
   justify-items: center;
   overflow: hidden;
   position: relative;
+
+  padding-inline: clamp(1rem, 0.0458rem + 4.0712vw, 2rem)
+    clamp(0rem, 1.7099rem + -3.5623vw, 0.875rem);
   /* Mobile */
   /* padding-inline: 1rem 0.875rem; */
 
-  /* Tablet */
-  padding-inline: 2rem 0rem;
-  /* Desktop */
-  padding-inline: 10.3125rem;
   & picture {
     width: max-content;
     z-index: -1;
+    padding-block-end: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
     /* Mobile */
     /* padding-block-end: 2.5rem; */
-    /* Tablet */
-    padding-block-end: 3.75rem;
-    /* Desktop */
-    padding-block-end: 6.5rem;
   }
   & img {
+    width: clamp(10.875rem, 2.0487rem + 37.659vw, 20.125rem);
     /* Mobile */
     /* width: 10.875rem; */
-    /* Tablet */
-    /* width: 20.125rem; */
-    /* Desktop */
-    width: 27.8125rem;
   }
 
   .circle {
     position: absolute;
     width: 8.0625rem;
+
+    right: clamp(-4.0625rem, -4.1555rem + 0.3969vw, -3.965rem);
+    top: clamp(15.875rem, 2.9337rem + 55.2163vw, 29.4375rem);
     /* Mobile */
-    right: -4.0625rem;
-    top: 15.875rem;
-    /* Tablet */
-    right: -3.965rem;
-    top: 29.4375rem;
-    /* DEsktop */
-    right: 34.0625rem;
-    top: 32.5625rem;
+    /* right: -4.0625rem; */
+    /* top: 15.875rem; */
   }
 }
 
@@ -708,10 +698,38 @@ dialog {
   .profile-picture-container {
     grid-template-columns: repeat(8, 1fr);
     justify-items: end;
-    /* border-bottom: 1px solid var(--gray); */
+    padding-inline: clamp(2rem, -7.5rem + 19.7917vw, 10.3125rem)
+      clamp(0rem, -11.7857rem + 24.5536vw, 10.3125rem);
+    /* Tablet */
+    /* padding-inline: 2rem 0rem; */
+    /* Desktop */
+    /* padding-inline: 10.3125rem; */
     & picture {
       grid-row: 1;
       grid-column: 3 / -1;
+      padding-block-end: clamp(3.75rem, 0.6071rem + 6.5476vw, 6.5rem);
+      /* Tablet */
+      /* padding-block-end: 3.75rem; */
+      /* Desktop */
+      /* padding-block-end: 6.5rem; */
+    }
+    & img {
+      width: clamp(20.125rem, 11.3393rem + 18.3036vw, 27.8125rem);
+      /* Tablet */
+      /* width: 20.125rem; */
+      /* Desktop */
+      /* width: 27.8125rem; */
+    }
+
+    & .circle {
+      right: clamp(-3.965rem, -47.425rem + 90.5417vw, 34.0625rem);
+      top: clamp(29.4375rem, 25.8661rem + 7.4405vw, 32.5625rem);
+      /* Tablet */
+      /* right: -3.965rem; */
+      /* top: 29.4375rem; */
+      /* DEsktop */
+      /* right: 34.0625rem; */
+      /* top: 32.5625rem; */
     }
 
     & .intro-container {
