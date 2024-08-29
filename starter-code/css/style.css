@@ -408,15 +408,16 @@ main {
   /* padding-inline: 10.3125rem; */
 }
 .project-card {
-  width: 33.75rem;
-  /* width: 21.4375rem; */
+  width: 21.4375rem;
+  /* width: 33.75rem; */
   display: flex;
   flex-direction: column;
 
+  gap: 1.25rem;
   /* Mobile */
   /* gap: 1.25rem; */
   /* Tablet */
-  gap: 1.25rem;
+  /* gap: 1.25rem; */
 }
 
 .project-details {
@@ -444,22 +445,20 @@ main {
   grid-row: 1;
   grid-column: 1 / -1;
   align-items: flex-start;
+
+  padding-inline: clamp(1rem, 0.0458rem + 4.0712vw, 2rem);
   /* Desktop */
-  padding-inline: 10.3125rem;
+  /* padding-inline: 10.3125rem; */
   width: 100%;
   & h3 {
+    font-size: clamp(2.5rem, 0.5916rem + 8.1425vw, 4.5rem);
+    letter-spacing: clamp(-0.1281rem, -0.017rem + -0.2316vw, -0.0712rem);
+    line-height: 1;
+
     /* Mobile */
-    font-size: 2.5rem;
-    letter-spacing: -0.07125rem;
-    line-height: 1;
-    /* TAblet */
-    font-size: 4.5rem;
-    letter-spacing: -0.128125rem;
-    line-height: 1;
-    /* Desktop */
-    font-size: 5.5rem;
-    letter-spacing: -0.15625rem;
-    line-height: 1;
+    /* font-size: 2.5rem; */
+    /* letter-spacing: -0.07125rem; */
+    /* line-height: 1; */
   }
 
   & a {
@@ -692,6 +691,21 @@ dialog {
 
   .projects-header {
     align-items: normal;
+
+    padding-inline: clamp(2rem, -7.5rem + 19.7917vw, 10.3125rem);
+
+    & h3 {
+      font-size: clamp(4.5rem, 3.3571rem + 2.381vw, 5.5rem);
+      letter-spacing: clamp(-0.1562rem, -0.096rem + -0.067vw, -0.1281rem);
+      /* TAblet */
+      /* font-size: 4.5rem; */
+      /* letter-spacing: -0.128125rem; */
+      /* line-height: 1; */
+      /* Desktop */
+      /* font-size: 5.5rem; */
+      /* letter-spacing: -0.15625rem; */
+      /* line-height: 1; */
+    }
   }
   .profile-picture-container {
     grid-template-columns: repeat(8, 1fr);
@@ -736,6 +750,12 @@ dialog {
       grid-row: 1;
       grid-column: 1 / 6;
     }
+  }
+
+  .project-card {
+    width: clamp(21.4375rem, 7.3661rem + 29.3155vw, 33.75rem);
+    /* width: 21.4375rem; */
+    /* width: 33.75rem; */
   }
 
   .projects-container {
