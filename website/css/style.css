@@ -313,7 +313,7 @@ main {
   justify-content: space-between;
   grid-row: 1;
   grid-column: 1 / -1;
-  align-items: flex-start;
+  align-items: center;
 
   padding-inline: clamp(1rem, 0.0458rem + 4.0712vw, 2rem);
 
@@ -325,6 +325,7 @@ main {
   }
 
   & a {
+    height: max-content;
     font-size: 1rem;
     letter-spacing: 0.14rem;
     padding-block-end: 0.625rem;
@@ -470,8 +471,6 @@ dialog {
   }
 
   .projects-header {
-    align-items: normal;
-
     padding-inline: clamp(2rem, -7.5rem + 19.7917vw, 10.3125rem);
 
     & h3 {
