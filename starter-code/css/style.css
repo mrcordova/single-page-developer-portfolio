@@ -284,19 +284,13 @@ header {
 
   align-items: center;
 
+  gap: clamp(3rem, 3.2443rem + -0.5089vw, 3.125rem);
+  padding-block-end: 5.4375rem;
+  padding-inline: 9.0625rem;
   /* Mobile */
-  gap: 3.125rem;
-  padding-block-end: 5.4375rem;
-  padding-inline: 9.0625rem;
-  /* TAblet */
-  gap: 3rem;
-  padding-block-end: 5.4375rem;
-  padding-inline: 9.0625rem;
-  /* Desktop */
-  gap: 13.75rem;
-  padding-block-end: 5.75rem;
-  padding-inline: 0rem;
-  /* border-bottom: 1px solid var(--white-text); */
+  /* gap: 3.125rem; */
+  /* padding-block-end: 5.4375rem; */
+  /* padding-inline: 9.0625rem; */
 }
 .logos-container {
   display: flex;
@@ -685,6 +679,20 @@ dialog {
         /* letter-spacing: -0.09375rem; */
       }
     }
+  }
+
+  .form-container {
+    gap: clamp(3rem, -9.2857rem + 25.5952vw, 13.75rem);
+    padding-block-end: clamp(5.4375rem, 5.0804rem + 0.744vw, 5.75rem);
+    padding-inline: clamp(0rem, 19.4196rem + -21.5774vw, 9.0625rem);
+    /* TAblet */
+    /* gap: 3rem; */
+    /* padding-block-end: 5.4375rem; */
+    /* padding-inline: 9.0625rem; */
+    /* Desktop */
+    /* gap: 13.75rem; */
+    /* padding-block-end: 5.75rem; */
+    /* padding-inline: 0rem; */
   }
   .logos-container {
     flex-direction: row;
