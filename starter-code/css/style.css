@@ -399,14 +399,12 @@ main {
   /* width: 100%; */
   /* grid-template-rows: max-content; */
 
+  gap: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem)
+    clamp(1.5rem, 3.4542rem + -4.0712vw, 2.5rem);
+  padding-block-start: clamp(0rem, -2.8626rem + 12.2137vw, 3rem);
   /* Mobile */
   /* gap: 2.5rem; */
-  /* Tablet */
-  /* padding-block-start: 3rem; */
-  /* gap: 3.75rem 1.5rem; */
-  /* Desktop */
-  padding-block-start: 8.75rem;
-  gap: 5rem 1.875rem;
+
   /* padding-inline: 10.3125rem; */
 }
 .project-card {
@@ -738,6 +736,19 @@ dialog {
       grid-row: 1;
       grid-column: 1 / 6;
     }
+  }
+
+  .projects-container {
+    padding-block-start: clamp(3rem, -3.5714rem + 13.6905vw, 8.75rem);
+    gap: clamp(3.75rem, 2.3214rem + 2.9762vw, 5rem)
+      clamp(1.5rem, 1.0714rem + 0.8929vw, 1.875rem);
+
+    /* Tablet */
+    /* padding-block-start: 3rem; */
+    /* gap: 3.75rem 1.5rem; */
+    /* Desktop */
+    /* padding-block-start: 8.75rem; */
+    /* gap: 5rem 1.875rem; */
   }
 }
 
