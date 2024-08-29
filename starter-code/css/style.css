@@ -486,27 +486,19 @@ main {
   text-align: center;
   align-self: center;
   align-items: center;
+
+  gap: clamp(1.5rem, -1.3626rem + 12.2137vw, 4.5rem);
   /* Mobile */
   /* gap: 1.5rem; */
-  /* Tablet */
-  /* gap: 4.5rem; */
-  /* padding-block-start: 5.625rem; */
-  /* DESktop */
-  gap: 2.6875rem;
-  padding-block-start: 0rem;
+
   & h2 {
+    font-size: clamp(2.5rem, 0.5916rem + 8.1425vw, 4.5rem);
+    letter-spacing: clamp(-0.1281rem, -0.017rem + -0.2316vw, -0.0712rem);
+    line-height: 1;
     /* Mobile */
-    font-size: 2.5rem;
-    letter-spacing: -0.07125rem;
-    line-height: 1;
-    /* Tablet */
-    font-size: 4.5rem;
-    letter-spacing: -0.128125rem;
-    line-height: 1;
-    /* Desktop */
-    font-size: 5.5rem;
-    letter-spacing: -0.15625rem;
-    line-height: 1;
+    /* font-size: 2.5rem; */
+    /* letter-spacing: -0.07125rem; */
+    /* line-height: 1; */
 
     & span {
       text-decoration: underline var(--green);
@@ -517,12 +509,12 @@ main {
   & p {
     color: var(--gray);
     font-family: "SpaceGrotesk-Medium";
-    /* Mobile */
-    font-size: 1rem;
+
+    font-size: clamp(1rem, 0.8807rem + 0.5089vw, 1.125rem);
     line-height: 1.625;
-    /* TAblet */
-    font-size: 1.125rem;
-    line-height: 1.55;
+    /* Mobile */
+    /* font-size: 1rem; */
+    /* line-height: 1.625; */
   }
 
   & a {
@@ -533,6 +525,7 @@ main {
     border-bottom: 2px solid var(--green);
     text-decoration: none;
 
+    margin-block-start: clamp(-2.125rem, 2.0277rem + -8.6514vw, 0rem);
     /* Tablet */
     /* SAme as mobile */
     /* margin-block-start: -2.125rem; */
@@ -749,6 +742,43 @@ dialog {
       text-align: start;
       grid-row: 1;
       grid-column: 1 / 6;
+
+      gap: clamp(2.6875rem, 6.5714rem + -4.3155vw, 4.5rem);
+      padding-block-start: clamp(0rem, 12.0536rem + -13.3929vw, 5.625rem);
+      /* Tablet */
+      /* gap: 4.5rem; */
+      /* padding-block-start: 5.625rem; */
+      /* DESktop */
+      /* gap: 2.6875rem; */
+      /* padding-block-start: 0rem; */
+
+      & h2 {
+        font-size: clamp(4.5rem, 3.3571rem + 2.381vw, 5.5rem);
+        letter-spacing: clamp(-0.1562rem, -0.096rem + -0.067vw, -0.1281rem);
+        /* Tablet */
+        /* font-size: 4.5rem; */
+        /* letter-spacing: -0.128125rem; */
+        /* line-height: 1; */
+        /* Desktop */
+        /* font-size: 5.5rem; */
+        /* letter-spacing: -0.15625rem; */
+        /* line-height: 1; */
+      }
+
+      & p {
+        /* TAblet */
+        /* font-size: 1.125rem; */
+        line-height: 1.55;
+      }
+
+      & a {
+        margin-block-start: clamp(-2.125rem, -6.1964rem + 8.4821vw, 1.4375rem);
+        /* Tablet */
+        /* SAme as mobile */
+        /* margin-block-start: -2.125rem; */
+        /* Desktop */
+        /* margin-block-start: 1.4375rem; */
+      }
     }
   }
 
