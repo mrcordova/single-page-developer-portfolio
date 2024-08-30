@@ -305,6 +305,7 @@ main {
     font-family: "SpaceGrotesk-Medium";
     line-height: 1.55;
     font-size: 1.125rem;
+    text-transform: uppercase;
   }
 }
 .projects-header {
