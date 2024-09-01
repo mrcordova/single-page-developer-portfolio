@@ -15,8 +15,10 @@
   src: url(../assets/fonts/static/SpaceGrotesk-Medium.ttf) format("truetype");
 }
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   height: 100%;
+  margin: 0 auto;
+  max-width: 90rem;
 }
 body {
   display: grid;
