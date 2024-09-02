@@ -361,6 +361,7 @@ main {
     line-height: 1;
 
     & span {
+      margin-inline-end: -0.5rem;
       text-decoration: underline var(--green);
       text-underline-position: under;
     }
