@@ -40,7 +40,6 @@ inputs[2].addEventListener("input", showError);
 // }
 
 msgBtn.addEventListener("click", (e) => {
-  // console.log("here");
   e.preventDefault();
 
   for (const input of inputs) {
