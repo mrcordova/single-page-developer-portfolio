@@ -280,13 +280,16 @@ main {
   }
 }
 .projects-container {
+  max-height: 120.52125rem;
+  overflow: auto;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   gap: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem)
     clamp(1.5rem, 3.4542rem + -4.0712vw, 2.5rem);
-  padding-block-start: clamp(0rem, -2.8626rem + 12.2137vw, 3rem);
+  /* padding-block-start: clamp(0rem, -2.8626rem + 12.2137vw, 3rem); */
 }
 .project-card {
   width: 21.4375rem;
@@ -317,6 +320,13 @@ main {
   }
 }
 .projects-header {
+  /* for scrolling of projects */
+  padding-block-start: clamp(0rem, -2.8626rem + 12.2137vw, 3rem);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: var(--bg);
+  /* End of scrolling projects */
   display: flex;
   justify-content: space-between;
   grid-row: 1;
@@ -484,6 +494,8 @@ dialog {
   }
 
   .projects-header {
+    padding-block-start: clamp(3rem, -3.5714rem + 13.6905vw, 8.75rem);
+
     padding-inline: clamp(2rem, -7.5rem + 19.7917vw, 10.3125rem);
 
     & h3 {
@@ -540,7 +552,7 @@ dialog {
   }
 
   .projects-container {
-    padding-block-start: clamp(3rem, -3.5714rem + 13.6905vw, 8.75rem);
+    /* padding-block-start: clamp(3rem, -3.5714rem + 13.6905vw, 8.75rem); */
     gap: clamp(3.75rem, 2.3214rem + 2.9762vw, 5rem)
       clamp(1.5rem, 1.0714rem + 0.8929vw, 1.875rem);
   }
