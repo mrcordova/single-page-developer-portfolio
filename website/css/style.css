@@ -317,6 +317,11 @@ main {
   }
 }
 .projects-header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: var(--bg);
+
   display: flex;
   justify-content: space-between;
   grid-row: 1;
