@@ -280,9 +280,9 @@ main {
   }
 }
 .projects-container {
-  max-height: 120.52125rem;
+  /* max-height: 120.52125rem;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: hidden; */
 
   display: flex;
   flex-wrap: wrap;
@@ -293,8 +293,9 @@ main {
   /* padding-block-start: clamp(0rem, -2.8626rem + 12.2137vw, 3rem); */
 }
 .project-card {
-  padding-inline: clamp(1rem, 0.0458rem + 4.0712vw, 2rem)
-    clamp(0rem, 1.9542rem + -4.0712vw, 1rem);
+  /* If I want project scrolling */
+  /* padding-inline: clamp(1rem, 0.0458rem + 4.0712vw, 2rem)
+    clamp(1rem, 0.0458rem + 4.0712vw, 2rem); */
 
   width: 21.4375rem;
   display: flex;
