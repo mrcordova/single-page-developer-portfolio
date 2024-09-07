@@ -36,13 +36,14 @@ body {
       clamp(61.5rem, 98.5076rem + -77.0992vw, 80.4375rem),
     var(--bg);
 }
+
 footer {
   background: url(../assets/images/pattern-rings.svg) no-repeat
       clamp(-23rem, -19.8244rem + -6.6158vw, -21.375rem)
       clamp(27.25rem, 20.6302rem + 28.2443vw, 34.1875rem),
     var(--dark-gray);
 
-  padding-inline: 0.5rem;
+  /* padding-inline: 0.5rem; */
   padding-block-start: 3.75rem;
 
   & .logos-container {
@@ -196,6 +197,7 @@ header {
   align-items: center;
 
   gap: clamp(3rem, 3.2443rem + -0.5089vw, 3.125rem);
+
   padding-block-end: 5.4375rem;
 }
 .logos-container {
@@ -416,15 +418,17 @@ dialog {
   }
 
   footer {
+    overflow: hidden;
     background: url(../assets/images/pattern-rings.svg) no-repeat
         clamp(-23rem, -34.5714rem + 24.1071vw, -12.875rem)
         clamp(20.4375rem, 49.9018rem + -32.7381vw, 34.1875rem),
       var(--dark-gray);
 
-    padding-inline: clamp(1rem, -9.6429rem + 22.1726vw, 10.3125rem);
+    /* padding-inline: clamp(1rem, -9.6429rem + 22.1726vw, 10.3125rem); */
     padding-block-start: clamp(3.75rem, 2.0357rem + 3.5714vw, 5.25rem);
 
     & .logos-container {
+      margin-inline: clamp(1rem, -9.6429rem + 22.1726vw, 10.3125rem);
       padding-block: clamp(1.875rem, 0.6607rem + 2.5298vw, 2.9375rem)
         clamp(2.5rem, -1.2143rem + 7.7381vw, 5.75rem);
     }
@@ -438,7 +442,6 @@ dialog {
       line-height: 1;
     }
   }
-
   .contact-container {
     gap: clamp(1.25rem, 0.1071rem + 2.381vw, 2.25rem);
 
@@ -468,7 +471,10 @@ dialog {
   }
 
   .form-container {
+    overflow: hidden;
     gap: clamp(3rem, -9.2857rem + 25.5952vw, 13.75rem);
+    margin-inline: clamp(1rem, -9.6429rem + 22.1726vw, 10.3125rem);
+    /* margin-inline: 9.18rem; */
     padding-block-end: clamp(5.4375rem, 5.0804rem + 0.744vw, 5.75rem);
   }
   .logos-container {
