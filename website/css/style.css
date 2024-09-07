@@ -407,6 +407,12 @@ main {
       cursor: pointer;
     }
   }
+  & div {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 dialog {
   display: none;
@@ -534,8 +540,9 @@ dialog {
         line-height: 1.55;
       }
 
-      & a {
+      & div {
         margin-block-start: clamp(-2.125rem, -6.1964rem + 8.4821vw, 1.4375rem);
+        flex-direction: row;
       }
     }
   }
